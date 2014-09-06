@@ -1,4 +1,4 @@
-JavaScript Self-Study Code
+JavaScript Self-Study Project
 ==================
 
 This repository contains code I am writing as part of a self-study curriculum in JavaScript. It follows the roadmap laid out at [JavaScript is sexy](http://javascriptissexy.com/how-to-learn-javascript-properly/). I determined that this was the best roadmap / syllabus out there after doing some research on reddit and googling around.
