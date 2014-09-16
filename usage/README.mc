@@ -1,1 +1,2 @@
-This folder contains (will contain) some boilerplate code for printing to the node.js console, among other useful tidbits on interacting with js at the command line. 
+This folder contains some boilerplate code for interacting with node.js at the command line, including:
+ -  printing to the console
