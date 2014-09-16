@@ -1,32 +1,32 @@
-// here we go over constructors with js prototypes
-// we'll create a prototype (aka class), same as in prototype.js but with some constructor content
+// here we go over constructors with js functions, for class-like behavior
+// we'll create a function same as in customClass.js but with some constructor-like content
 // and the constructor code is called when we create an instance
 
-// define prototype with some constructor code
-var prototypeWithConstructor1 = function() {
-    console.log("hello world, from prototypeWithConstructor1! constructor code being called...");
+// define function with some "constructor" code
+var classWithConstructor1 = function() {
+    console.log("hello world, from classWithConstructor1! constructor code being called...");
 };
-// create an instance of the prototype
-var instance1 = new prototypeWithConstructor1();
-// and the constructor code execution can be verified in the console
+// create an instance of the function
+var instance1 = new classWithConstructor1();
+// and the constructor code executes, which can be verified in the console
 
-// define a more interesting prototype...
-var prototypeWithConstructor2 = function(someText) {
+// define a more interesting function/class...
+var classWithConstructor2 = function(someText) {
     this.text = someText;
     console.log(someText);
 };
 
-var instance2 = new prototypeWithConstructor2('creating instance2... test!');
+var instance2 = new classWithConstructor2('creating instance2... test!');
 
-// and let's create another prototype with the other definition syntax:
-function prototypeWithConstructor3(someText){
+// and let's create another function with the other definition syntax:
+function classWithConstructor3(someText){
     this.text = someText;
-    console.log('created instance of prototypeWithConstructor3');
+    console.log('created instance of classWithConstructor3');
 };
 
 // and make some instances
-var instance3 = new prototypeWithConstructor3("let's see how instance3 goes.");
-var instance4 = new prototypeWithConstructor3("perhaps instance4 will be better?");
+var instance3 = new classWithConstructor3("let's see how instance3 goes.");
+var instance4 = new classWithConstructor3("perhaps instance4 will be better?");
 
 console.log("instance3's text is: " + instance3.text);
 console.log("instance4's text is: " + instance4.text);
