@@ -31,3 +31,5 @@ var instance4 = new prototypeWithConstructor3("perhaps instance4 will be better?
 console.log("instance3's text is: " + instance3.text);
 console.log("instance4's text is: " + instance4.text);
 
+
+
