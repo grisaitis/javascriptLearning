@@ -17,3 +17,17 @@ var prototypeWithConstructor2 = function(someText) {
 };
 
 var instance2 = new prototypeWithConstructor2('creating instance2... test!');
+
+// and let's create another prototype with the other definition syntax:
+function prototypeWithConstructor3(someText){
+    this.text = someText;
+    console.log('created instance of prototypeWithConstructor3');
+};
+
+// and make some instances
+var instance3 = new prototypeWithConstructor3("let's see how instance3 goes.");
+var instance4 = new prototypeWithConstructor3("perhaps instance4 will be better?");
+
+console.log("instance3's text is: " + instance3.text);
+console.log("instance4's text is: " + instance4.text);
+
