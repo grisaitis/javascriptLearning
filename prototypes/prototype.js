@@ -15,5 +15,7 @@ var typeOfInstance1 = Object.prototype.toString(instance1);
 var typeOfInstance2 = Object.prototype.toString(instance2);
 console.log(typeOfInstance1);
 console.log(typeOfInstance2);
-
-
+/* which prints:
+    [object Object]                                                                                                                                                                 
+    [object Object]       
+*/
