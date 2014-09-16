@@ -1,0 +1,1 @@
+This folder contains (will contain) some boilerplate code for printing to the node.js console, among other useful tidbits on interacting with js at the command line. 
