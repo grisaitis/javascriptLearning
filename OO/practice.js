@@ -5,7 +5,7 @@ var person1;
 
 // create generating function for class
 var Person1 = function(name){
-    name1 = name;
+//    name1 = name;
     this.name2 = name;
 }
 if (DEBUG){
