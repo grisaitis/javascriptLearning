@@ -9,9 +9,10 @@ var Person1 = function(name){
     this.name2 = name;
 }
 if (DEBUG){
-    person1 = Person1('test name1');
+    person1 = new Person1('test name1');
     // console.log(person1.name1);
     console.log(person1.name2);
+    // console.log('test')
 }
 
 // create methods for that class
