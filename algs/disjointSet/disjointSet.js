@@ -25,3 +25,9 @@ later on we'll add the following two optimizations:
 2. weighted unioning
 */
 
+// make stuff "importable" elsewhere
+module.exports = {
+	DisjointSet: DisjointSet
+}
+
+
