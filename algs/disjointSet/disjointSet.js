@@ -15,8 +15,8 @@ DisjointSet.prototype.union = function(item1, item2){
 
 DisjointSet.prototype.find = function(item){
 	/* find root of item */
-	if item == this.items[item]: return item; // root found
-	else: return this.find(item);
+	if (item == this.items[item]) return item; // root found
+	else return this.find(item);
 }
 
 /* optimizations
