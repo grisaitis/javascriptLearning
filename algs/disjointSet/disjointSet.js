@@ -9,14 +9,15 @@ var DisjointSet = function(n) {
 DisjointSet.prototype.union = function(item1, item2){
 	/* create union between item1 and item2 */
 	// find root of item1, and set it's parent to the root of item2
-	var rootOfItem1 = this.find(item1);
-	this.parentOf[rootOfItem1] = this.find(item2);
+	var rootOfItem1 = this.findRootOf(item1);
+	this.parentOf[rootOfItem1] = this.findRootOf(item2);
 }
 
-DisjointSet.prototype.find = function(item){
+DisjointSet.prototype.findRootOf = function(item){
 	/* find root of item */
-	if (item == this.parentOf[item]) return item; // root found
-	else return this.find(item);
+	var parentOfItem = this.parentOf[item];
+	if (item == parentOfItem) return item; // root found
+	else return this.findRootOf(parentOfItem);
 }
 
 /* optimizations
